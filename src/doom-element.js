@@ -108,7 +108,7 @@ export class Doom extends LitElement {
     super()
     this.title = 'Doom'
     this.paragraph = 'Doom (oficialmente escrito DOOM, y ocasionalmente DooM por los fans, basado en el estilo de las letras del logo de Doom) es un videojuego FPS (First Person Shooter o disparos en primera persona) creado por Id Software en 1993. El Doom original funcionaba bajo el sistema operativo DOS. El juego consiste en personificar a un marine espacial que se encuentra de rutina en una estación en Phobos , una de las lunas de Marte . En un segundo, las puertas del Infierno quedan abiertas, dejando libres a un sinnúmero de demonios, espíritus inmundos, zombis, que infestan la base en cuestión de horas. Eres el único ser humano superviviente en la estación y tu misión es ir logrando pasar con vida de nivel en nivel (como en el Wolfenstein 3D).'
-    this.image0URL = 'https://static.wikia.nocookie.net/zombie/images/5/57/Doom_cover_art.jpg/revision/latest?cb=20131208235024&path-prefix=es'
+    this.image0URL = 'https://gnd-tech.com/content/2018/07/doom.jpg'
 
     this.title1 = ' Historia Original'
     this.paragraph1 = 'Eres un marine, de los más fuertes y entrenados de la Tierra, experimentado en combate y listo para la acción. Hace 3 años golpeaste a un oficial superior por ordenar a sus soldados que dispararan contra un grupo de manifestantes civiles. Considerándote como peligroso, decidieron trasladarte a la base en Marte, sector espacial de la UAC (Union Aerospace Corporation). La UAC es un conglomerado multi-planetario con instalaciones de investigación y desechos radioactivos en el planeta Marte y sus dos lunas, Phobos y Deimos. Tus primeros días los pasaste sentado en la sala de vigilancia, viendo videos restringidos y material ultrasecreto como si fuera TV por cable, no habiendo mucha acción allí. Secretamente, la UAC, entre otras cosas, desarrollaba muchos proyectos militares en Marte y sus dos lunas. Una y la más problemática era la teletransportación interdimensional, pero hasta ahora solo se había podido abrir un teletransportador entre Phobos y Deimos. Se probó a lanzar artefactos por un lado y verlos salir por el otro, pero en algún momento se necesitó de humanos para experimentar. Voluntarios militares y científicos se ofrecieron... Pero al entrar por el portal comenzaron a suceder cosas desconcertantes: o entraban y simplemente no se rematerializaban en el teletransportador de destino, o regresaban muertos con extraños síntomas en el cuerpo (mordeduras, piel seca y quemada, algunos aparecían descuartizados), o algunos llegaban completamente al borde de una esquizofrenia psicótica, cual zombis de película, masticando la mitad de sus dedos, o habiéndose tragado sus propios ojos, a la vez que otros pocos al cruzar por el teletransportador sufrían una explosión inexplicable de cuerpo completo. El trabajo de identificar partes de cuerpos que fueran compatibles unas con otras se había convertido en una labor de 24 horas. Aparte de dichos acontecimientos, la UAC anunciaba alguno que otro retraso, pero que lo demás iba bien. Ya habiendo pasado algún tiempo, repentinamente Marte recibió un mensaje desde Phobos: "¡Requerimos de soporte militar inmediato! ¡Algo terrible y monstruoso está saliendo por los portales! ¡Los sistemas no responden! Los sistemas computarizados se han vuelto locos!" El resto era simplemente incoherente. Poco después, Deimos simplemente se desvaneció del espacio. Desde ese momento, ha habido varios intentos de establecer conexión con alguna de las lunas, sin éxito. Como último recurso, tu y tus compañeros, son enviados a Phobos para ver que es lo que está pasando. Al llegar, tu primera orden es esperar en la entrada y asegurar el perímetro mientras los demás efectivos entraban a la base llevándose las armas de alto calibre. Por muchas horas, tu radio sólo recibe sonidos de combate: disparos, hombres gritando órdenes, gritos de auxilio, algo que podría identificarse como huesos y cartílagos quebrantándose, y por fin, el espectral silencio. Tus compañeros están muertos. Te decides a entrar por la puerta de la base, algo no esta bien, al dar la vuelta te das cuenta de que lo que mató a tus compañeros merece más de 2 escopetazos a la cabeza... A continuacion algunos de sus personajes'
@@ -120,11 +120,11 @@ export class Doom extends LitElement {
 
     this.title3 = 'Pinky'
     this.paragraph3 = 'El Demonio Pinky es otro de los monstruos originales que retorna en el relanzamiento de Doom (2016).'
-    this.image3URL = 'https://static.wikia.nocookie.net/doom/images/4/4a/PINKY.png/revision/latest?cb=20160528030634'
+    this.image3URL = 'https://cdna.artstation.com/p/assets/covers/images/039/604/242/large/jason-martin-jason-martin-pinky-thumbnail.jpg?1626373941https://mrwallpaper.com/images/high/the-one-and-only-doom-slayer-afuhseo09yclu9w0.jpg'
 
     this.title4 = 'Mancubus'
     this.paragraph4 = 'El Mancubus (pl. Mancubi) hace otra vuelta en el reinicio de Doom, conservando la mayor parte de las características de sus antepasados el original clásico y el de Doom 3, al tiempo que introduce nuevas características que se combinan para hacerlo una de las amenazas más graves del juego. (para mas informacion ve a la pagina 2)    '
-    this.image4URL = 'https://static.wikia.nocookie.net/doom/images/d/df/Mancubus_DE.png/revision/latest?cb=20230909063005'
+    this.image4URL = 'https://i.redd.it/aty9beokhj351.jpg'
 
 
     this.title5 = 'Revenant'
@@ -203,7 +203,7 @@ export class Doom extends LitElement {
       }
 
       #main{
-        background-color:#dd821b
+        background-color:#6e2204
       }
   
       .criatura-img{
