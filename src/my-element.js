@@ -1,32 +1,64 @@
 import { LitElement, css, html } from 'lit'
+import './doom-element.js'
+import './doom-guy.js'
+import './mancubus-element.js'
+import './pinky-element.js'
+import './revenant-element.js'
+
 
 export class MyElement extends LitElement {
   static get properties() {
     return {
 
-      /**
-       * The number of times the button has been clicked.
-       */
-      count: { type: Number },
+
+      position: { type: Number },
     }
   }
 
   constructor() {
     super()
-  
-    this.count = 0
+
+
+    this.position = 0
   }
+
+  setPrevious(e) {
+    if (this.position === 0) {
+      this.position = 4
+    }
+    else {
+      this.position--
+    }
+  }
+
+  setNext(e) {
+    if (this.position == 4) {
+      this.position = 0
+    }
+    else {
+      this.position++
+    }
+  }
+
 
   render() {
     return html`
-     
+     <div>
+      <button @click="${this.setPrevious}">Anterior</button>
+      <button @click="${this.setNext}">Siguiente</button>
+      <h1>${this.position}</h1>
+      ${this.position===0 ? html `<doom-element></doom-element>` : ''}
+      ${this.position===1 ? html `<doom-guy></doom-guy>` : ''}
+      ${this.position===2 ? html `<mancubus-element></mancubus-element>`:''}
+      ${this.position===3 ? html `<pinky-element></pinky-element>`:''}
+      ${this.position===4 ? html `<revenant-element></revenant-element>`:''}
+      
+    </div>
 
     `
   }
 
-  _onClick() {
-    this.count++
-  }
+  
 
   static get styles() {
     return css`
@@ -37,40 +69,6 @@ export class MyElement extends LitElement {
         text-align: center;
       }
 
-      .logo {
-        height: 6em;
-        padding: 1.5em;
-        will-change: filter;
-        transition: filter 300ms;
-      }
-      .logo:hover {
-        filter: drop-shadow(0 0 2em #646cffaa);
-      }
-      .logo.lit:hover {
-        filter: drop-shadow(0 0 2em #325cffaa);
-      }
-
-      .card {
-        padding: 2em;
-      }
-
-      .read-the-docs {
-        color: #888;
-      }
-
-      a {
-        font-weight: 500;
-        color: #646cff;
-        text-decoration: inherit;
-      }
-      a:hover {
-        color: #535bf2;
-      }
-
-      ::slotted(h1) {
-        font-size: 3.2em;
-        line-height: 1.1;
-      }
 
       button {
         border-radius: 8px;
@@ -79,7 +77,7 @@ export class MyElement extends LitElement {
         font-size: 1em;
         font-weight: 500;
         font-family: inherit;
-        background-color: #1a1a1a;
+        background-color: grey;
         cursor: pointer;
         transition: border-color 0.25s;
       }
@@ -96,7 +94,7 @@ export class MyElement extends LitElement {
           color: #747bff;
         }
         button {
-          background-color: #f9f9f9;
+          background-color: grey;
         }
       }
     `
