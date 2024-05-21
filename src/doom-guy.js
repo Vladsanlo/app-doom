@@ -1,6 +1,6 @@
 import { LitElement, css, html } from 'lit'
 
-export class MyElement extends LitElement {
+export class DoomGuy extends LitElement {
   static get properties() {
     return {
 
@@ -39,31 +39,22 @@ export class MyElement extends LitElement {
   render() {
     return html`
      <div id="main">
-          <div  class="first-title">
-            <h1>${this.title}</h1> 
-            <p>${this.paragraph}</p>
-          </div>
-            
-          <div class="historia">
-            <h1>${this.title1}</h1> 
-            <p>${this.paragraph1}</p>
-          </div>
+
+    <h1>${this.title}</h1> 
+    <p>${this.paragraph}</p>
+  
+    <h1>${this.title1}</h1> 
+    <p>${this.paragraph1}</p>
           
-            <div class="doomguy">
-            <h1>${this.title2}</h1> 
+    <h1>${this.title2}</h1> 
               <p>${this.paragraph2}</p>
-          </div>
 
-          <div class="pinky">
-            <h1>${this.title3}</h1> 
-            <p>${this.paragraph3}</p>
-          </div>
-
-          <div class="doom-img-container">
-              <img class="criatura-img" src="${this.imageURL}">
-            </div>
-        
-
+    <h1>${this.title3}</h1> 
+    <p>${this.paragraph3}</p>
+          
+      <div class="doom-img-container">
+        <img class="criatura-img" src="${this.imageURL}">
+      </div> 
 
     `
   }
@@ -72,15 +63,21 @@ export class MyElement extends LitElement {
 
   static get styles() {
     return css`
-      :host {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 2rem;
-        text-align: center;
-      }
+    #main{
+      background-color:#1f440e 
+    }
+
+      
+    .criatura-img{
+      width: 20vw;
+  }
+  
+  .doom-img-container{
+    text-align:center;
+  }
 
     `
   }
 }
 
-window.customElements.define('my-element', MyElement)
+window.customElements.define('doom-guy', DoomGuy)
